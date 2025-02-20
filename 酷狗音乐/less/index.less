@@ -1,0 +1,223 @@
+
+// out:../css/
+@import "./base.less";
+@vw:3.75vw;
+body{
+    background-color: #f9fafb;
+}
+header{
+    position: fixed;
+    height: (50/@vw);
+    padding: 0 (15/@vw);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;/* 空间均分 */
+    align-items: center;/* 垂直居中 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    .left{
+        width: (235/@vw);
+        height: (50/@vw);
+        background-image: url(../assets/head.png);
+        background-size: contain;/* 图片适应 */
+        background-repeat: no-repeat;/* 图片不重复 */
+        position: fixed;/* 固定定位 */
+     
+        a{
+            
+            width: (80/@vw);
+            height: (30/@vw);
+            background-color: yellow;
+            border-radius:(15/@vw);
+            color: #333;
+            text-align: center;
+            line-height: (30/@vw);/* 行高和高度一致，垂直居中 */
+            font-size: (14/@vw);
+            position: fixed;
+            top: (10/@vw);
+            right: (10/@vw);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+.search{
+    /*头部固定不占位置，让搜索去顶上*/
+    margin-top: (50/@vw);
+    height: (50/@vw);
+    // background-color: pink;
+    padding: (10/@vw) (15/@vw);
+    .txt{
+        height: (32/@vw);
+        background-color: #f2f4f5;
+        border-radius: (16/@vw);
+        text-align: center;/* 文字居中 */
+        line-height: (32/@vw);
+        
+            
+        span{
+            color: #A1A4B3;
+            font-size: (14/@vw);
+
+        }
+        .iconfont{
+            font-size: (16/@vw);
+        }
+    
+        }
+    }
+.banner{
+    
+    height: (108/@vw);
+    
+    margin: (10/@vw) (15/@vw);
+    border-radius:(15/@vw);
+    img{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        border-radius:(15/@vw);
+        object-fit: cover;/* 图片适应 *//*img的时候经常用*/
+        
+    }
+}
+.list{
+  
+    margin-top: (10/@vw);
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;/* 空间均分 */
+    margin-bottom: (16/@vw);
+    line-height: (25/@vw);
+    padding: 0(15/@vw);
+    h4{
+        font-size: (20/@vw);
+
+    }
+    a{
+        font-size: (12/@vw);
+        color: #A1A4B3;
+    }
+}
+.rege{
+    margin-top:(20/@vw);
+    padding: 0 (15/@vw);
+    li{
+        display: flex;
+        margin-bottom: (16/@vw);
+        background-color: #fff;
+        border-radius: (10/@vw);
+        height: (105    /@vw);
+        .txt{
+            padding-left: (15/@vw) ;
+            .more{
+                color: #333;
+                font-size: (16/@vw);
+                
+            }
+        }
+
+        
+    img{
+        width: (105/@vw);
+        height: (105/@vw);
+        border-radius: (10/@vw);
+    }
+    p{
+        color: #A1A4B3;
+        margin-top: (10/@vw);
+    }
+    }
+}
+.recommend{
+   
+    ul{
+        display: flex;
+        flex-wrap: wrap;/* 每个li换行 */
+        justify-content: space-between;/* 空间均分 */
+        
+        li{
+            width: (105/@vw);
+            height: (143/@vw);
+            margin-left: (15/@vw);
+            margin: (10/@vw) ;
+            .pic{
+                position: relative;
+                width: (105/@vw);
+                height: (105/@vw);
+            }
+                img{
+                    width: (105/@vw);
+                    height:(105/@vw);
+                    object-fit: cover;/* 图片适应 */
+                    border-radius: (10/@vw);
+                }
+                .cover{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: (70/@vw);
+                    height: (28/@vw);
+                    background-color: rgba(0,0,0,.5);
+                    color: #fff;
+                    border-radius: 0 (10/@vw) 0 (10/@vw);
+                    text-align: center;
+                    line-height: (28/@vw);/*疏漏的*/
+                    font-size: (14/@vw);
+
+                }
+                p{
+                    color: #333;
+                    font-size: (14/@vw);
+                
+                }
+        }
+    }
+}
+.download{
+    position: fixed;/* 固定定位 */
+    left: (15/@vw);
+    bottom: (30/@vw);
+    width: (345/@vw);
+    height: (50/@vw);
+    border-radius: (25/@vw);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+    img{
+        width: (50/@vw);
+        height: (50/@vw);
+        margin-left: (10/@vw);
+    }
+    p{
+        font-size: (16/@vw);
+        color: #000000;
+        line-height: (50/@vw);
+        margin-left: (10/@vw);
+        flex: 1;/* 占据剩余空间 */
+    }
+    span{
+        width: (32/@vw);
+        height: (32/@vw);
+        background-color: #f2f3f5;
+        border-radius: (16/@vw);
+        font-size: (14/@vw);
+        color: rgba(0,0,0,.5);
+        line-height: (32/@vw);/* 纵向居中 */
+        text-align: center;/* 水平居中 */
+        margin-top: (10/@vw);
+        margin-right: (10/@vw);
+    
+    }
+}
